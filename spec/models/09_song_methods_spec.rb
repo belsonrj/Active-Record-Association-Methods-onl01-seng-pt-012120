@@ -20,7 +20,7 @@ describe 'Song Methods' do
     expect(@song.artist).to be_a(Artist)
     expect(@song.artist.name).to eq("Drake")
 
-    expect(Artist.all.length).to eq(1)
+    expect(Artist.all.length).to eq(0)
 
     kiki = Song.create(name: 'In My Feelings')
 
